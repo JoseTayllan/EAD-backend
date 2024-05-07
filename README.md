@@ -1,0 +1,1 @@
+# Adapte este arquivo para refletir sua proposta de plataforma
