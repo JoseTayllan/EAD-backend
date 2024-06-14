@@ -40,7 +40,7 @@ export default class AuthUserUseCase {
         permissions: null,
         restaurants: null,
         categories: null,
-        dishes: null,
+        courses: null,
         orders: null,
       };
     }

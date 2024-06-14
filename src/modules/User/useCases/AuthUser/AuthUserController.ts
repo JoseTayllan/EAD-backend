@@ -17,7 +17,7 @@ export default class AuthUserController {
       }
 
       const { email, password } = request.body;
-      const { user, permissions, restaurants, categories, dishes, orders } =
+      const { user, permissions, restaurants, categories, courses, orders } =
         await this.authUserUseCase.execute(email.toLowerCase());
       const tokenData = await this.authUserUseCase.matchUser(user, password);
 
@@ -40,7 +40,7 @@ export default class AuthUserController {
         permissions,
         restaurants,
         categories,
-        dishes,
+        courses,
         orders,
         tokenData,
       });
